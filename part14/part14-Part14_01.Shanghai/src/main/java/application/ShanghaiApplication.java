@@ -12,8 +12,8 @@ public class ShanghaiApplication extends Application{
 
 	public void start(Stage stage) {
 		// create the x and y axes that the chart is going to use
-		NumberAxis xAxis= new NumberAxis(2006, 2018, 2);
-		NumberAxis yAxis = new NumberAxis(0, 100, 10);
+		NumberAxis xAxis= new NumberAxis(2006, 2018, 1);
+		NumberAxis yAxis = new NumberAxis(0, 100, 5);
 
 		// set the titles for the axes
 		xAxis.setLabel("Year");
@@ -26,6 +26,8 @@ public class ShanghaiApplication extends Application{
 		// and it uses the axes we created earlier
 		LineChart<Number, Number> lineChart = new LineChart<>(xAxis, yAxis);
 		lineChart.setTitle("University of Helsinki, Shanghai ranking");
+		// hides the legend
+		lineChart.setLegendVisible(false);
 
 		// create the data set that is going to be added to the line chart
 		XYChart.Series sRankSeries = new XYChart.Series();
