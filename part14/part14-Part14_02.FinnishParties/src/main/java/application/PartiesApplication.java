@@ -37,7 +37,6 @@ public class PartiesApplication extends Application {
 				HashMap<Integer, Double> map = new HashMap<>();
 				for (int i = 1; i < parts.length; i++) {
 					if (!parts[i].equals("-")) {
-						System.out.println(Double.valueOf(parts[i]));
 						map.put(years.get(i - 1), Double.valueOf(parts[i]));
 					}
 				}
@@ -73,8 +72,6 @@ public class PartiesApplication extends Application {
 			// and add the data set to the chart
 			lineChart.getData().add(data);
 		});
-
-		System.out.println(this.parties);
 
 		Scene view = new Scene(lineChart, 680, 480);
 		String cssFile = getClass().getResource("styles.css").toExternalForm();
