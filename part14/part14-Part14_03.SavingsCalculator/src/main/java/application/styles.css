@@ -1,0 +1,17 @@
+.root {
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+}
+
+/* .slider .thumb {
+    -fx-font-family: Arial;
+    -fx-font-size: 12px;
+} */
+
+.custom-slider .axis {
+    -fx-tick-label-font-size: 12px;
+    -fx-tick-label-font-family: "Arial";
+}
+
+/* String cssFile = getClass().getResource("styles.css").toExternalForm();
+		scene.getStylesheets().add(cssFile); */
